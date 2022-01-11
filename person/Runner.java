@@ -16,6 +16,7 @@ public class Runner {
 		pm.add(p3);
 	
 		pm.searching("Bridget");
+		pm.searching("John");
 	}
 }
 

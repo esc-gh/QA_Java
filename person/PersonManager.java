@@ -26,8 +26,8 @@ public class PersonManager {
 				System.out.println("No matches found.");
 			}
 		}
-		
 	}
+	
 	public void searching(String input) {
 		matches.clear();
 		for (Person i : people) {
@@ -42,6 +42,7 @@ public class PersonManager {
 		}
 		else {
 			System.out.println("No matches found!");
+		}
 	}
 //	public void output(List<Person> x) {
 //		x.stream().forEach(Person -> System.out.println(Person));
