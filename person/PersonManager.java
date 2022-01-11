@@ -19,19 +19,18 @@ public class PersonManager {
 
 	public void search(String input) {
 		for (Person i : people) {
-			if (i.getName() == input) {
+			if (i.getName().equals(input)) {
 				System.out.println(i);
-			}
-			else {
+			} else {
 				System.out.println("No matches found.");
 			}
 		}
 	}
-	
+
 	public void searching(String input) {
 		matches.clear();
 		for (Person i : people) {
-			if (i.getName() == input) {
+			if (i.getName().equals(input)) {
 				matches.add(i);
 			}
 		}
@@ -39,8 +38,7 @@ public class PersonManager {
 			for (Person i : matches) {
 				System.out.println(i);
 			}
-		}
-		else {
+		} else {
 			System.out.println("No matches found!");
 		}
 	}
