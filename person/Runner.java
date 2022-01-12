@@ -14,10 +14,8 @@ public class Runner {
 		pm.add(p1);
 		pm.add(p2);
 		pm.add(p3);
-	
+
 		pm.searching("Bridget");
 		pm.searching("John");
 	}
 }
-
-

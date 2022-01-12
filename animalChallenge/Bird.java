@@ -1,4 +1,4 @@
-package AnimalChallenge;
+package animalChallenge;
 
 public class Bird extends Animal {
 	private boolean hasBeak = true;
@@ -10,14 +10,17 @@ public class Bird extends Animal {
 		return hasBeak;
 	}
 
+	@Override
 	public boolean checkFlight() {
 		return canFly;
 	}
 
+	@Override
 	public int getLegsNumber() {
 		return legsNumber;
 	}
 
+	@Override
 	public boolean checkFur() {
 		return hasFur;
 	}

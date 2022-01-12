@@ -17,18 +17,19 @@ public class PersonManager {
 		}
 	}
 
-	public void search(String input) {
-		for (Person i : people) {
-			if (i.getName().equals(input)) {
-				System.out.println(i);
-			} else {
-				System.out.println("No matches found.");
-			}
-		}
-	}
+//	public void search(String input) {
+//		for (Person i : people) {
+//			if (i.getName().equals(input)) {
+//				System.out.println(i);
+//			} else {
+//				System.out.println("No matches found.");
+//			}
+//		}
+//	}
 
 	public void searching(String input) {
 		matches.clear();
+		System.out.println("Results for \"" + input + "\":");
 		for (Person i : people) {
 			if (i.getName().equals(input)) {
 				matches.add(i);
