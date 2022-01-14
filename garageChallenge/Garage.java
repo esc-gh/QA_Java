@@ -34,8 +34,8 @@ public class Garage {
 
 	public void filterClass(String name) {
 		for (Vehicle i : new ArrayList<>(garage)) {
-			if (name.equalsIgnoreCase(i.getClassName())) {
-				System.out.println(i.getModel() + " " + i.getClassName() + " is no longer in the Garage.");
+			if (name.equalsIgnoreCase(i.getClass().getSimpleName())) {
+				System.out.println(i.getModel() + " " + i.getClass().getSimpleName() + " is no longer in the Garage.");
 				garage.remove(i);
 			}
 		}

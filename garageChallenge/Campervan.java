@@ -2,17 +2,11 @@ package garageChallenge;
 
 public class Campervan extends Vehicle {
 	private int bedNumber;
-	private String className = this.getClass().getSimpleName();
 	private double repairCost = 350;
 
 	@Override
 	public double getRepairCost() {
 		return this.repairCost;
-	}
-
-	@Override
-	public String getClassName() {
-		return this.className;
 	}
 
 	public Campervan(int numberOfWheels, String manufacturer, String model, int bedNumber) {
