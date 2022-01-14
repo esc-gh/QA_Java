@@ -2,17 +2,11 @@ package garageChallenge;
 
 public class Motorbike extends Vehicle {
 	private boolean hasSidecar;
-	private String className = this.getClass().getSimpleName();
 	private double repairCost = 200;
 
 	@Override
 	public double getRepairCost() {
 		return this.repairCost;
-	}
-
-	@Override
-	public String getClassName() {
-		return this.className;
 	}
 
 	public Motorbike(int numberOfWheels, String manufacturer, String model, boolean hasSidecar) {

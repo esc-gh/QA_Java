@@ -53,11 +53,9 @@ public abstract class Vehicle {
 		this.repairCost = repairCost;
 	}
 
-	public abstract String getClassName();
-
 	@Override
 	public String toString() {
-		return "This is a " + getModel() + " " + getClassName() + ", made by " + getManufacturer() + ".";
+		return "This is a " + getModel() + " " + getClass().getSimpleName() + ", made by " + getManufacturer() + ".";
 	}
 
 //	@Override

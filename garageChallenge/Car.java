@@ -3,7 +3,6 @@ package garageChallenge;
 public class Car extends Vehicle {
 	private int seatNumber;
 	private int doorNumber;
-	private String className = this.getClass().getSimpleName();
 	private double repairCost = 250.25;
 
 	public Car(int numberOfWheels, String manufacturer, String model, int seatNumber, int doorNumber) {
@@ -15,11 +14,6 @@ public class Car extends Vehicle {
 	@Override
 	public double getRepairCost() {
 		return this.repairCost;
-	}
-
-	@Override
-	public String getClassName() {
-		return this.className;
 	}
 
 	public int getSeatNumber() {
