@@ -19,7 +19,6 @@ public class Library {
 							+ i.getAvailable() + " copies remaining");
 				} else {
 					System.out.println(getClass().getSimpleName() + " " + i.getName() + " unavailable");
-
 				}
 			}
 		}
@@ -51,7 +50,6 @@ public class Library {
 				System.out.println("No item found");
 			}
 		}
-
 	}
 
 	public void checkIn(int id, Person person) {
@@ -65,7 +63,6 @@ public class Library {
 				System.out.println("No item found");
 			}
 		}
-
 	}
 
 	public void addItem(Item input) {
